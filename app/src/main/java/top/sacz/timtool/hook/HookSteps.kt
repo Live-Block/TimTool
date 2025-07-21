@@ -60,7 +60,7 @@ class HookSteps {
                 methodFindProcessor.startFindAsync { initHooks() }
                 return
             }
-            XposedBridge.log("[Tim小助手]环境初始化完成")
+            XposedBridge.log("[TimTool]环境初始化完成")
             //登录
             NewLoginTask().loginAndGetUserInfoAsync()
             //检查更新

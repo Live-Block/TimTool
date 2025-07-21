@@ -106,7 +106,7 @@ class QQMsgViewAdapter : BaseHookItem() {
                 putContentViewId(child.id)
                 //解开hook
                 unhook?.unhook()
-                ToastTool.show("[Tim小助手]已对MsgView进行适配")
+                ToastTool.show("[TimTool]已对MsgView进行适配")
                 break
             }
         }

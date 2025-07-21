@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Tim小助手</h1>
+<h1>TimTool</h1>
 
 <a href="https://github.com/suzhelan/TimTool/releases"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/suzhelan/TimTool/total?label=Downloads"></a>
 <a href="https://github.com/suzhelan/TimTool/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/suzhelan/TimTool"></a>

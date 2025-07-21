@@ -36,7 +36,7 @@
       "versionCode": 11,
       "versionName": "1.1",
       "updateLog": "# 新增 文件上传重命名*默认开启  (自动重命名base为包名或应用名 自动将.apk重命名成.APK 防止被QQ自动重命名成.apk.1 \n私聊暂未适配,等待后续适配)\n\n# 修复 复读开启后QQ原本复读图标仍然会出现",
-      "fileName": "Tim小助手_1.1.apk",
+      "fileName": "TimTool_1.1.apk",
       "time": "2024-12-07T10:44:48.000+00:00",
       "forceUpdate": false
     }
