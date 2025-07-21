@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = BuildVersionConfig.applicationId
+    namespace = BuildVersionConfig.nameSpace
     compileSdk = BuildVersionConfig.compileSdk
 
     defaultConfig {
