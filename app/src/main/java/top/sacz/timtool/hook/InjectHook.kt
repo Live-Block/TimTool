@@ -13,7 +13,7 @@ import top.sacz.timtool.hook.common.CommonMethod
  */
 private val TIM_PACKAGE = HookEnv.TIM_PACKAGE
 private val QQ_PACKAGE = HookEnv.QQ_PACKAGE
-private const val TAG = "[Tim助手]"
+private const val TAG = "[TimTool]"
 
 class InjectHook : IXposedHookLoadPackage, IXposedHookZygoteInit {
     val hookSteps = HookSteps()

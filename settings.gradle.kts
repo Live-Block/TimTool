@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 
 includeBuild("build-plugin")
 
-rootProject.name = "Tim小助手"
+rootProject.name = "TimTool"
 include(":app")
 
 include(":annotation-scanner")

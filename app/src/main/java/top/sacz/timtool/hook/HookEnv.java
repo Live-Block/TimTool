@@ -126,17 +126,9 @@ public class HookEnv {
 
     }
 
-    public static String getModuleApkPath() {
-        return moduleApkPath;
-    }
-
     public static void setModuleApkPath(String path) {
         moduleApkPath = path;
 
-    }
-
-    public static String getProcessName() {
-        return processName;
     }
 
     public static void setProcessName(String currentProcessName) {

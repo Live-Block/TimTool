@@ -2,7 +2,6 @@ package top.sacz.timtool.hook;
 
 import android.content.Context;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 
@@ -30,7 +29,7 @@ import top.sacz.xphelper.reflect.MethodUtils;
  *
  * @author suzhelan
  */
-@HookItem("注入QQ设置界面")
+@HookItem("注入TIM设置界面")
 public class QQSettingInject extends BaseHookItem {
 
     private void onCreate(XC_MethodHook.MethodHookParam param) {
@@ -167,19 +166,5 @@ public class QQSettingInject extends BaseHookItem {
             }
             return null;
         }
-    }
-
-
-    /**
-     * qq设置页差不多是这样的结构展示列表
-     */
-    class DemoItemGroupWrapper {
-        public List<DemoItem> demoItemList;
-    }
-
-    class DemoItem {
-
-        String text;
-        ImageView image;
     }
 }
