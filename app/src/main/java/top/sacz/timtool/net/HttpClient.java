@@ -58,15 +58,6 @@ public class HttpClient {
                 .create(UserApi.class);
     }
 
-    public static PayApi getPayApi() {
-        return new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .client(buildClient(false))
-                .addConverterFactory(new FastJsonConverterFactory())
-                .build()
-                .create(PayApi.class);
-    }
-
     public static UpdateApi getUpdateApi() {
         Gson gson = new GsonBuilder().setLenient().create();
         return new Retrofit.Builder()

@@ -67,7 +67,6 @@ class SettingDialog {
                 onTelegramClick(it)
             }
         }
-        PayDialog(this).showFirstDialog()
     }
 
     private fun onTelegramClick(view: View) {
