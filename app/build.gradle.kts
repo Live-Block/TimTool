@@ -80,9 +80,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-    }
-
-    buildFeatures {
         buildConfig = true
     }
 
