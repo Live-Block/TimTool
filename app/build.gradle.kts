@@ -18,11 +18,11 @@ android {
         applicationId = BuildVersionConfig.applicationId
         minSdk = BuildVersionConfig.minSdk
         targetSdk = BuildVersionConfig.targetSdk
-        versionCode = 26
-        versionName = "2.6"
+        versionCode = 27
+        versionName = "2.7"
 
         ndk {
-            //只支持arm64 v8a的lib so库,因为qq只支持arm64 v8a
+            //只支持arm64 v8a的lib so库,因为新版TIM只支持arm64 v8a
             abiFilters.add("arm64-v8a")
         }
 
