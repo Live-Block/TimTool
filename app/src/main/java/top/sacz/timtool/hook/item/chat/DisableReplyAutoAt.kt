@@ -13,15 +13,25 @@ class DisableReplyAutoAt : BaseSwitchFunctionHookItem(), IMethodFinder {
     lateinit var method: Method
 
     override fun find() {
-        method = buildMethodFinder()
-            .searchPackages("com.tencent.mobileqq.aio.input.reply")
-            .usedString("msgItem.msgRecord.senderUid")
-            .first()
+        try {
+            method = buildMethodFinder()
+                .searchPackages("com.tencent.mobileqq.aio.input.reply")
+                .usedString("msgItem.msgRecord.senderUid")
+                .first()
+        } catch (e: Throwable) {
+            // 静默处理异常，避免日志输出
+        }
     }
 
     override fun loadHook(loader: ClassLoader) {
-        hookBefore(method) { param ->
-            param.result = null
+        try {
+            if (::method.isInitialized) {
+                hookBefore(method) { param ->
+                    param.result = null
+                }
+            }
+        } catch (e: Throwable) {
+            // 静默处理异常，避免日志输出
         }
     }
 }
