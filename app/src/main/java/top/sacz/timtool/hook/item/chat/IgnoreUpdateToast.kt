@@ -4,10 +4,10 @@ import top.sacz.timtool.hook.base.BaseSwitchFunctionHookItem
 import top.sacz.timtool.hook.core.annotation.HookItem
 import top.sacz.xphelper.reflect.MethodUtils
 
-@HookItem("辅助功能/聊天/移除点击链接 或 小程序时的更新Toast")
+@HookItem("辅助功能/聊天/移除点击 小程序 时的更新Toast")
 class IgnoreUpdateToast : BaseSwitchFunctionHookItem() {
     override fun getTip(): String {
-        return "开启此功能可直接点击 链接/小程序 并进入"
+        return "开启此功能可直接点击 小程序 并进入"
     }
 
     override fun loadHook(loader: ClassLoader) {
