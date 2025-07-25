@@ -30,7 +30,7 @@ import java.util.Locale
  */
 class MainActivity : AppCompatActivity() {
     private val hideActivityName: String
-        get() = "$packageName.app.activity.HideMainActivity"
+        get() = "top.sacz.timtool.app.activity.HideMainActivity"
 
     private val showActivityName: String
         get() = javaClass.name
