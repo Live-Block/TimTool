@@ -11,6 +11,9 @@
 
     <color name="ripple_color">#14313335</color>
 
+    <color name="bigcard">#FFFFFFFF</color>
+    <color name="cardbg">#FFFFFFFF</color>
+
     <color name="warning">#EB5545</color>
     <!--透明-->
     <color name="transparent">#00000000</color>

@@ -13,6 +13,7 @@ import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.color.DynamicColors
 import com.kongzue.dialogx.dialogs.MessageDialog
 import com.kongzue.dialogx.util.TextInfo
 import top.sacz.timtool.BuildConfig
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        DynamicColors.applyToActivityIfAvailable(this)
         super.onCreate(savedInstanceState)
         setContentView(bind.root)
         requestTransparentStatusBar()
