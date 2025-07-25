@@ -3,7 +3,6 @@ package top.sacz.timtool.ui.dialog
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
@@ -22,6 +21,7 @@ import top.sacz.timtool.ui.adapter.CategoryAdapter
 import top.sacz.timtool.ui.adapter.SettingUIItemManger
 import top.sacz.timtool.ui.bean.Category
 import top.sacz.timtool.ui.bean.ParentCategory
+import androidx.core.net.toUri
 
 class SettingDialog {
     private lateinit var dialog: MessageDialog
@@ -74,16 +74,16 @@ class SettingDialog {
         val url = "https://t.me/timtool"
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
-        intent.data = Uri.parse(url)
+        intent.data = url.toUri()
         view.context.startActivity(intent)
     }
 
     private fun onGithubClick(view: View) {
         //跳转到浏览器
-        val url = "https://github.com/suzhelan/TimTool"
+        val url = "https://github.com/Live-Block/TimTool"
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
-        intent.data = Uri.parse(url)
+        intent.data = url.toUri()
         view.context.startActivity(intent)
     }
 

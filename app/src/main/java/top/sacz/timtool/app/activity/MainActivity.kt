@@ -5,7 +5,6 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -24,6 +23,7 @@ import top.sacz.timtool.ui.dialog.UpdateLogDialog
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import androidx.core.net.toUri
 
 /**
  * app主界面
@@ -103,16 +103,16 @@ class MainActivity : AppCompatActivity() {
         val url = "https://t.me/timtool"
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
-        intent.data = Uri.parse(url)
+        intent.data = url.toUri()
         startActivity(intent)
     }
 
     fun onGithubClick(view: View) {
         //跳转到浏览器
-        val url = "https://github.com/suzhelan/TimTool"
+        val url = "https://github.com/Live-Block/TimTool"
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
-        intent.data = Uri.parse(url)
+        intent.data = url.toUri()
         startActivity(intent)
     }
 
